@@ -16,12 +16,12 @@ app.controller('cliController', ['$http', '$scope', function($http, $scope){
     }
 
     $scope.laravelLog = function() {
-        $scope.command = 'cat /Library/WebServer/Documents/Sites/dian/storage/logs/laravel.log';
+        $scope.command = 'cat /var/www/html/dian/storage/logs/laravel.log';
         $scope.frameURL = $scope.phpURL + $scope.command;
     }
 
     $scope.wechatLog = function() {
-        $scope.command = 'cat /Library/WebServer/Documents/Sites/dian/storage/logs/wechat.log';
+        $scope.command = 'cat /var/www/html/dian/storage/logs/wechat.log';
         $scope.frameURL = $scope.phpURL + $scope.command;
     }
 
