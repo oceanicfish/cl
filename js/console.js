@@ -29,4 +29,14 @@ app.controller('cliController', ['$http', '$scope', function($http, $scope){
         $scope.frameURL = $scope.phpURL + $scope.command;
     }
 
+    $scope.deployDian = function() {
+        $scope.command = './update_cl_script.sh';
+        $scope.frameURL = $scope.phpURL + $scope.command;
+    }
+
+    $scope.wechatLog = function() {
+        $scope.command = './update_dian_script.sh';
+        $scope.frameURL = $scope.phpURL + $scope.command;
+    }
+
 }]);
